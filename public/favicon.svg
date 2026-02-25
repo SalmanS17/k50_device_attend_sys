@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Circular background -->
+  <rect width="200" height="200" rx="40" fill="#1e40af"/>
+  
+  <!-- Clock/Check-in icon -->
+  <circle cx="100" cy="100" r="70" fill="none" stroke="#ffffff" stroke-width="8"/>
+  <circle cx="100" cy="100" r="60" fill="none" stroke="#ffffff" stroke-width="2"/>
+  
+  <!-- Hour and minute hands -->
+  <line x1="100" y1="100" x2="100" y2="50" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <line x1="100" y1="100" x2="140" y2="100" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Center dot -->
+  <circle cx="100" cy="100" r="6" fill="#ffffff"/>
+  
+  <!-- Check mark -->
+  <g transform="translate(140, 60)">
+    <path d="M 0 15 L 10 25 L 30 0" stroke="#22c55e" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

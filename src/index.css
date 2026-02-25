@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 6%;
+    --foreground: 210 20% 92%;
+
+    --card: 222 44% 8%;
+    --card-foreground: 210 20% 92%;
+
+    --popover: 222 44% 8%;
+    --popover-foreground: 210 20% 92%;
+
+    --primary: 160 84% 40%;
+    --primary-foreground: 222 47% 6%;
+
+    --secondary: 222 30% 14%;
+    --secondary-foreground: 210 20% 80%;
+
+    --muted: 222 30% 12%;
+    --muted-foreground: 215 16% 50%;
+
+    --accent: 160 60% 30%;
+    --accent-foreground: 160 84% 90%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 38 92% 10%;
+
+    --success: 160 84% 40%;
+    --success-foreground: 160 84% 6%;
+
+    --border: 222 20% 16%;
+    --input: 222 20% 16%;
+    --ring: 160 84% 40%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 222 47% 5%;
+    --sidebar-foreground: 210 20% 70%;
+    --sidebar-primary: 160 84% 40%;
+    --sidebar-primary-foreground: 222 47% 6%;
+    --sidebar-accent: 222 30% 12%;
+    --sidebar-accent-foreground: 210 20% 92%;
+    --sidebar-border: 222 20% 12%;
+    --sidebar-ring: 160 84% 40%;
+
+    --chart-1: 160 84% 40%;
+    --chart-2: 200 70% 50%;
+    --chart-3: 38 92% 50%;
+    --chart-4: 280 60% 50%;
+    --chart-5: 0 72% 51%;
+
+    --font-sans: 'Inter', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: var(--font-sans);
+  }
+
+  code, .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-sm border border-border/50;
+  }
+
+  .glow-primary {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.15);
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+}

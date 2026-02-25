@@ -1,0 +1,20 @@
+{
+  "name": "k50-sync-service",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "ZKTeco K50 Attendance Synchronization Service",
+  "main": "k50-sync.js",
+  "scripts": {
+    "start": "node k50-sync.js",
+    "dev": "nodemon k50-sync.js",
+    "test": "node test-connection.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "@supabase/supabase-js": "^2.97.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
